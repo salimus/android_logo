@@ -1,0 +1,1 @@
+Android Logo with hover animations using CSS3 transitions.
