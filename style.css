@@ -1,6 +1,6 @@
 
 div {
-	margin: o;
+	margin: 0;
 	padding: 0;
 }
 
@@ -23,6 +23,8 @@ div div {
 	border-radius: 110px 110px 0 0;
 	-moz-border-radius: 110px 110px 0 0;
 	-webkit-border-radius: 110px 110px 0 0;
+
+	-webkit-transition: all 0.1s ease-in;
 }
 
 .l_eye, .r_eye {
@@ -83,6 +85,7 @@ div div {
 .l_arm, .r_arm, .l_leg, .r_leg {
 	width: 50px;
 	position: absolute;
+	-webkit-transition: all 0.1s ease-in;
 }
 
 .l_arm, .r_arm {
@@ -116,6 +119,23 @@ div div {
 	right: 45px;
 }
 
+.head:hover {
+	transform: rotate(-5deg) translate(-5px, -8px);
+	-moz-transform: rotate(-5deg) translate(-5px, -8px);
+	-webkit-transform: rotate(-5deg) translate(-5px, -8px);
+}
+
+.l_arm:hover {
+	transform: rotate(15deg) translate(-15px, 0);
+	-moz-transform: rotate(15deg) translate(-15px, 0);
+	-webkit-transform: rotate(15deg) translate(-15px, 0);
+}
+
+.r_arm:hover {
+	transform: rotate(-15deg) translate(15px, 0);
+	-moz-transform: rotate(-15deg) translate(15px, 0);
+	-webkit-transform: rotate(-15deg) translate(15px, 0);
+}
 
 
 
